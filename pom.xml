@@ -43,5 +43,6 @@
 
   <scm>
     <developerConnection>scm:git:https://github.com/nikhilfeb95/Pet-Clinic.git</developerConnection>
+    <tag>pet-clinic-0.0.1</tag>
   </scm>
 </project>
