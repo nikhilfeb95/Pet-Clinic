@@ -1,11 +1,12 @@
 package nikhil.springframework.petclinic.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Owner extends Person {
 
-    //Owner has pets
-    private Set<Pet> pets;
+    //Owner has pets --> initializing to prevent null exception
+    private Set<Pet> pets = new HashSet<>();
 
     private String address;
     private String city;
