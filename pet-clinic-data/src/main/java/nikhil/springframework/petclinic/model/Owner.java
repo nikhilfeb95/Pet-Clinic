@@ -7,7 +7,7 @@ import java.util.Set;
 @Entity
 @Table(name = "owners")
 public class Owner extends Person {
-
+    //As owner inherits from
     //Owner has pets --> initializing to prevent null exception
     //Owner has many pets --> pet has owner(mapped by Owner owner in Pet class)
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
