@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: nikhil.springframework.petclinic.PetClinicApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.291 s - in nikhil.springframework.petclinic.PetClinicApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.321 s - in nikhil.springframework.petclinic.PetClinicApplicationTests
