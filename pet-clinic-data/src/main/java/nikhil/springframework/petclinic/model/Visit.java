@@ -1,16 +1,16 @@
 package nikhil.springframework.petclinic.model;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
-@Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Entity
 @Table(name = "visits")
 public class Visit extends BaseEntity {
 

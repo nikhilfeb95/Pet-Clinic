@@ -6,9 +6,11 @@ nikhil\springframework\petclinic\services\VetService.class
 nikhil\springframework\petclinic\repositories\PetTypeRepository.class
 nikhil\springframework\petclinic\services\springdatajpa\OwnerSDJpaService.class
 nikhil\springframework\petclinic\model\Person.class
+nikhil\springframework\petclinic\model\Specialty$SpecialtyBuilder.class
 nikhil\springframework\petclinic\services\springdatajpa\PetTypeSDJpaService.class
 nikhil\springframework\petclinic\services\springdatajpa\VisitSDJpaService.class
 nikhil\springframework\petclinic\services\map\VetServiceMap.class
+nikhil\springframework\petclinic\model\Visit$VisitBuilder.class
 nikhil\springframework\petclinic\services\map\AbstractMapService.class
 nikhil\springframework\petclinic\model\BaseEntity.class
 nikhil\springframework\petclinic\services\VisitService.class
@@ -31,4 +33,5 @@ nikhil\springframework\petclinic\repositories\VisitRepository.class
 nikhil\springframework\petclinic\model\Owner.class
 nikhil\springframework\petclinic\services\SpecialtyService.class
 nikhil\springframework\petclinic\repositories\PetRepository.class
+nikhil\springframework\petclinic\model\Vet$VetBuilder.class
 nikhil\springframework\petclinic\services\OwnerService.class

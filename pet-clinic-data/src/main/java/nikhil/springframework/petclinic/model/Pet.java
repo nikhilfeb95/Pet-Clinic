@@ -1,5 +1,6 @@
 package nikhil.springframework.petclinic.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -9,12 +10,17 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@Getter
 @Setter
+@Getter
 @NoArgsConstructor
+@AllArgsConstructor
+@Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity{
+    public Pet(Long id) {
+        super(id);
+    }
+
     @Column(name = "name")
     private  String name;
 
