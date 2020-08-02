@@ -41,7 +41,7 @@ public class DataLoader implements CommandLineRunner {
         PetType savedDogPetType = petTypeService.save(dog);
 
         PetType cat = new PetType();
-        dog.setName("Cat");
+        cat.setName("Cat");
         PetType savedCatPetType = petTypeService.save(cat);
 
         //We save it for persistence --> easy link with hibernate to push data into
@@ -82,7 +82,7 @@ public class DataLoader implements CommandLineRunner {
         Pet jotarosPet = new Pet();
         jotarosPet.setPetType(savedCatPetType);
         jotarosPet.setName("Iggy");
-        jotarosPet.setOwner(owner1);
+        jotarosPet.setOwner(owner2);
         jotarosPet.setBirthDate(LocalDate.now());
         owner2.getPets().add(jotarosPet);
         ownerService.save(owner2);
