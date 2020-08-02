@@ -40,7 +40,8 @@ public class OwnerController {
         if(owner.getLastName() == null)
             owner.setLastName("");
 
-        List<Owner> results = ownerService.findByLastNameLike(owner.getLastName());
+        //adding the wildcard --> underneath hibernate makes sql calls using the wildcard
+        List<Owner> results = ownerService.findByLastNameLike("%" + owner.getLastName() + "%");
 
         //if no owner found then redirect back to the search page
         if(results.isEmpty())
