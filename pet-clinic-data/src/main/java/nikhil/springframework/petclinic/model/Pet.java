@@ -1,9 +1,6 @@
 package nikhil.springframework.petclinic.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -19,6 +16,16 @@ import java.util.Set;
 public class Pet extends BaseEntity{
     public Pet(Long id) {
         super(id);
+    }
+
+    @Builder
+    public Pet(Long id, String name, PetType petType, Owner owner, LocalDate birthDate, Set<Visit> visits) {
+        super(id);
+        this.name = name;
+        this.petType = petType;
+        this.owner = owner;
+        this.birthDate = birthDate;
+        this.visits = visits;
     }
 
     @Column(name = "name")
